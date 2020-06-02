@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Synaptic</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>
+                Realizar un programa, con redes neuronales para escritura de un digito, con una matriz de 6x10.
+                que pueda agregar mediante el mouse el digito.
+            </h2>
+        </div>
+        <div class="main">
+            <div class="content">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="imagenes">
+                <a >
+                    <img onclick="restart()" src="./static/direccion.png" alt="refresh">
+                </a>
+
+            </div>
+            <div class="textos_resultado" id="res">
+                <!-- <p id="resul1">El resultado es:</p>
+                <b>Resultaod</b>
+                <p id="resul2">Pero tambien puede ser:</p>
+                <b>Resultado</b> -->
+            </div>
+        </div>
+    </div>´
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
+    <script src="./index.js"></script>
+    <script src="./trainingSet.js"></script>
+    <script src="./synaptic.js"></script>
+</body>
+
+</html>
